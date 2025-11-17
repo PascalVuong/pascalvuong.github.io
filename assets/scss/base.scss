@@ -2,6 +2,14 @@
 @use 'tokens';
 @use 'placeholder' as *;
 
+:root {
+  --accent: #{tokens.$accent};
+  --text:   #{tokens.$text};
+  --bg-0:   #{tokens.$bg-0};
+  --bg-1:   #{tokens.$bg-1};
+  --glow:   #{tokens.$glow};
+}
+
 * { box-sizing: border-box; }
 html { font-size: 100%; }
 body { margin: 0; font-family: tokens.$font-stack; line-height: 1.6; }

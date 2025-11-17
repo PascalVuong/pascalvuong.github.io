@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services — Pascal Vuong Portfolio</title>
+  <link rel="stylesheet" href="assets/css/compiled.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Direct naar hoofdinhoud</a>
+
+  <!-- Brandbar -->
+  <header class="brandbar">
+    <a class="brand" href="index.html">
+      <span class="brand__logo" aria-hidden="true"></span>
+      <span class="brand__text">
+        <strong>Pascal Vuong</strong>
+        <em>Full-Stack Developer</em>
+      </span>
+    </a>
+  </header>
+
+  <!-- Top navigatie -->
+  <nav aria-label="Hoofdnavigatie" class="topnav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="autobiography.html">Biography</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html" aria-current="page" class="is-current">Services</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <main id="main" class="page" tabindex="-1">
+    <section id="services" class="content" aria-labelledby="services-title">
+      <h1 id="services-title">Services</h1>
+
+      <!-- Intro -->
+      <section class="services-section services-section--intro">
+        <p>
+          Als junior full-stack developer help ik met het bouwen van webapps, mobiele prototypes en kleine games.
+          Op deze pagina zie je in welke soorten projecten ik ervaring heb en waarbij ik jou kan ondersteunen.
+        </p>
+      </section>
+
+      <!-- Grid met diensten -->
+      <section class="services-grid" aria-label="Overzicht van diensten">
+        <!-- Frontend -->
+        <section class="service-card service-card--frontend">
+          <h2>Frontend development</h2>
+          <p>
+            Ik ontwerp en bouw responsieve interfaces met aandacht voor structuur, leesbaarheid en toegankelijkheid.
+          </p>
+          <ul class="service-points">
+            <li>Semantische HTML5 en schone CSS/SCSS-structuur</li>
+            <li>Responsieve layouts (desktop, tablet, mobiel)</li>
+            <li>Component-gedreven opbouw (cards, navbars, buttons, grids)</li>
+            <li>Basisinteractie met JavaScript (menus, toggles, lightbox)</li>
+          </ul>
+          <p class="service-tools">
+            <strong>Tech:</strong> HTML5, CSS/SCSS, moderne JavaScript.
+          </p>
+        </section>
+
+        <!-- Backend & APIs -->
+        <section class="service-card service-card--backend">
+          <h2>Backend &amp; API’s (PHP)</h2>
+          <p>
+            Aan de serverkant werk ik met PHP en MySQL om data op te slaan, te verwerken en via duidelijke endpoints beschikbaar te maken.
+          </p>
+          <ul class="service-points">
+            <li>Objectgeoriënteerde PHP met duidelijke classes en structuur</li>
+            <li>CRUD-functionaliteit (aanmaken, lezen, updaten, verwijderen)</li>
+            <li>Eenvoudige REST-achtige endpoints en formulierenafhandeling</li>
+            <li>Werken met sessies, validatie en basis-authenticatie</li>
+            <li>Templating met Smarty en nette scheiding tussen logica en presentatie</li>
+          </ul>
+          <p class="service-tools">
+            <strong>Tech:</strong> PHP, Composer, Smarty, MySQL/SQL.
+          </p>
+        </section>
+
+        <!-- Full-stack webprojecten -->
+        <section class="service-card service-card--fullstack">
+          <h2>Full-stack webprojecten</h2>
+          <p>
+            Op basis van school- en groepsprojecten heb ik ervaring met het opzetten van complete kleine webapplicaties:
+            van database tot dashboard.
+          </p>
+          <ul class="service-points">
+            <li>Gebruik van datamodellen (tabellen, relaties) en seeding</li>
+            <li>Beheerschermen met lijsten, filters en detailpagina’s</li>
+            <li>Rollen en eenvoudige rechtenstructuur (bijv. medewerker / beheerder)</li>
+            <li>Basisrapportages en overzichten (dashboards, statistieken)</li>
+            <li>Codekwaliteit met typehints, docblocks en tools zoals PHPStan</li>
+          </ul>
+          <p class="service-tools">
+            <strong>Voorbeelden:</strong> management-dashboards, kleine admin-panels, oefenwebshops.
+          </p>
+        </section>
+
+        <!-- Mobiele apps & prototypes -->
+        <section class="service-card service-card--mobile">
+          <h2>Mobiele apps &amp; prototypes</h2>
+          <p>
+            Met React Native en Expo bouw ik mobiele UI’s en flows die klaar zijn om later aan een backend te koppelen.
+          </p>
+          <ul class="service-points">
+            <li>Onboarding-, login- en registratie-schermen</li>
+            <li>Overzichtelijke home- en detailpagina’s</li>
+            <li>Integratie van externe API’s (bijv. weerdata via REST)</li>
+            <li>Navigatie met Expo Router (stack- en tabs-structuren)</li>
+            <li>Mobile-first vormgeving met eigen layouts en styling</li>
+          </ul>
+          <p class="service-tools">
+            <strong>Tech:</strong> React Native, Expo, TypeScript (TSX), REST-API’s.
+          </p>
+        </section>
+
+        <!-- Game development & creative coding -->
+        <section class="service-card service-card--games">
+          <h2>Game development &amp; prototyping</h2>
+          <p>
+            In mijn vrije tijd werk ik graag aan games en interactieve projecten. Dat helpt mij met logisch nadenken en systematisch programmeren.
+          </p>
+          <ul class="service-points">
+            <li>2D top-down RPG’s met movement, collision en maps</li>
+            <li>Turn-based combat systemen met status-effecten en AI-logica</li>
+            <li>Gebruik van spritesheets, animaties en tilesets</li>
+            <li>Audio-integratie (muziek, sound effects)</li>
+            <li>Modulaire opzet van game-logica (states, entities, UI)</li>
+          </ul>
+          <p class="service-tools">
+            <strong>Tech:</strong> Python, Pygame, Tiled.
+          </p>
+        </section>
+
+        <!-- Werkwijze & samenwerking -->
+        <section class="service-card service-card--workflow">
+          <h2>Werkwijze &amp; samenwerking</h2>
+          <p>
+            Naast techniek vind ik manier van samenwerken net zo belangrijk. Ik ben leergierig, helder in communicatie en
+            werk stap voor stap naar een resultaat toe.
+          </p>
+          <ul class="service-points">
+            <li>Duidelijke afspraken en regelmatig laten zien waar ik mee bezig ben</li>
+            <li>Problemen analyseren en gericht debuggen</li>
+            <li>Overzichtelijke map- en code-structuur</li>
+            <li>Basiservaring met versiebeheer (Git) en documentatie</li>
+            <li>Open voor feedback en bereid om iteratief te verbeteren</li>
+          </ul>
+          <p class="service-tools">
+            <strong>Focus:</strong> samenwerking, duidelijke communicatie en goed begrijpbare code.
+          </p>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Pascal Vuong</p>
+  </footer>
+</body>
+</html>

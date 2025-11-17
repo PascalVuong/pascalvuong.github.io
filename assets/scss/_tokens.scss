@@ -1,3 +1,11 @@
+:root {
+  --accent: #57c26b;
+  --text: #e7e7e7;
+  --bg-0: #121212;
+  --bg-1: #1d1d1d;
+  --glow: rgba(255,255,255,.06);
+}
+
 $maxw: 80rem;
 
 $space-1: .5rem;
@@ -16,3 +24,9 @@ $ns: (
   background: #fffa,
   margin: $space-2
 );
+
+$accent: #57c26b;         // groen uit je ontwerp
+$text: #e7e7e7;           // tekstkleur op donker
+$bg-0: #121212;           // basis
+$bg-1: #1d1d1d;           // bovenlaag
+$glow: rgba(255,255,255,.06);

@@ -1,7 +1,10 @@
-@use 'tokens';
+// components.scss -> bedoeld voor losse blokken zoals cards, knoppen, navbars, badges etc.
 @use 'sass:color';
+@use 'tokens';
+@use 'placeholder' as *;
 
-nav {
+/* NAV pill-rij */
+nav.topnav {
   ul {
     display: flex;
     gap: 1rem;
@@ -9,31 +12,313 @@ nav {
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   a {
     display: inline-block;
     text-decoration: none;
-    padding: .6em 1em;
+    padding: .55em .95em;
     border: 1px solid tokens.$border;
-    border-radius: tokens.$pill-radius;
-    transition: border-color .15s ease; /* & (self) kan ook, maar zo netter */
+    border-radius: .75rem;
+    color: tokens.$text;
 
-    /* 1) &:hover / &:focus-visible — pseudo class */
     &:hover,
     &:focus-visible {
       border-color: color.adjust(tokens.$border, $lightness: -10%);
     }
 
-    /* 2) &.is-current — modifier class (BEM-achtig) */
     &.is-current {
-      border-color: color.adjust(tokens.$border, $lightness: -20%);
-      font-weight: 600;
+      border-color: tokens.$accent;
     }
 
-    /* 3) & + & — adjacent sibling (geen visueel effect) */
+    /* sibling: a + a */
     & + & {
       --adjacent: 1;
     }
   }
+}
+
+/* BRAND */
+.brandbar { display: flex; align-items: center; }
+
+.brandbar .brand {
+  display: inline-grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: .9rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* CSS-drawn logo */
+.brandbar .brand .brand__logo {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, .25) inset;
+
+  /* Spokes-centrum finetunen; 50% = exact midden (bv. 48% = iets naar links) */
+  --spx: 50%;
+
+  background:
+    /* center dot */
+    radial-gradient(circle at 50% 50%, var(--accent) 0 7px, transparent 8px) 0 0 / 100% 100% no-repeat,
+    /* ring */
+    radial-gradient(circle at 50% 50%, transparent 0 12px, rgba(87, 194, 107, .35) 12px 28px, transparent 29px) 0 0 / 100% 100% no-repeat,
+    /* spokes: gebruikt de offset */
+    repeating-conic-gradient(from -3deg at var(--spx) 50%, var(--accent) 0 6deg, transparent 6deg 45deg),
+    /* sheen */
+    linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, 0));
+}
+
+.brandbar .brand .brand__text {
+  display: grid;
+  line-height: 1.05;
+
+  strong {
+    font-size: 1.5rem;
+  }
+
+  em {
+    font-style: normal;
+    color: color.adjust(tokens.$accent, $lightness: -8%);
+    font-size: .9rem;
+  }
+}
+
+/* Icons */
+
+/* Alleen het Expo-icoon */
+.tech-list li[data-brand="expo"] img,
+.tech-list img[alt~="Expo"] {
+  filter: brightness(3.5);
+}
+
+/* Alleen het Palette-icoon */
+.tech-list li[data-brand="stylesheetstyling"] img.icon,
+.tech-list img.icon[src$="palette.svg"] {
+  filter:
+    invert(56%) sepia(16%) saturate(1000%)
+    hue-rotate(75deg) brightness(1.05) contrast(0.95)
+    drop-shadow(0 0 6px rgba(tokens.$accent, .28));
+}
+
+/* CTA */
+.btn {
+  display: inline-grid;
+  grid-auto-flow: column;
+  gap: .5rem;
+  align-items: center;
+  padding: .65em 1rem;
+  border-radius: .7rem;
+  text-decoration: none;
+  border: 1px solid tokens.$border;
+  color: tokens.$text;
+
+  &--accent {
+    background: color.adjust(tokens.$accent, $lightness: -5%);
+    border-color: color.adjust(tokens.$accent, $lightness: -10%);
+    color: #0f2514;
+  }
+
+  .btn__icon {
+    display: inline-grid;
+    place-items: center;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 999px;
+    border: 1px solid color.adjust(tokens.$accent, $lightness: -15%);
+    background: rgba(0, 0, 0, .12);
+  }
+}
+
+/* media */
+.project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* tekstblok neemt de meeste ruimte,
+   én we maken er een kolom van zodat
+   tekst, media en knop netjes onder elkaar staan */
+.project-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* container voor meerdere kleine plaatjes onder de tekst */
+.project-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  max-width: 100%;
+  justify-content: flex-start;
+}
+
+/* klikbare thumbnails – klein formaat (10rem breed) */
+.project-media__thumb {
+  width: 10rem;
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.03);
+    box-shadow:
+      0 0 0 1px tokens.$accent,
+      0 0 20px rgba(tokens.$accent, 0.7);
+  }
+}
+
+.project-cta {
+  margin-top: 2rem;       // afstand tot tekst / screenshots
+  margin-bottom: 1.5rem;    // lucht tot onderkant van de kaart
+  display: flex;
+  justify-content: flex-start; // knop links
+}
+
+.project-info3 a.ext-link {
+  color: tokens.$text;
+  text-decoration: underline;
+}
+.project-info3 a.ext-link:hover,
+.project-info3 a.ext-link:focus-visible {
+  color: tokens.$accent;
+}
+
+.project-collab__title { margin: 0 0 .25rem; }
+.project-collab .label {
+  font-weight: 600;
+  font-variant-caps: all-small-caps;
+  letter-spacing: .5px;
+  opacity: .8; // subtieler dan de naam
+}
+.project-collab .name { font-weight: 700; }
+
+.project-collab__links .ext-link {
+  color: tokens.$text; text-decoration: underline;
+}
+.project-collab__links .ext-link:hover,
+.project-collab__links .ext-link:focus-visible {
+  color: tokens.$accent;
+}
+
+/* FEATURES TOGGLE (Belangrijkste features) */
+.project-features {
+  margin-top: 0.75rem;
+
+  summary {
+    display: inline-flex;       // tekst + pijltje naast elkaar
+    align-items: center;
+    gap: 0.4rem;                // ruimte tussen tekst en pijltje
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &::-webkit-details-marker {
+      display: none;            // standaard marker weghalen
+    }
+
+    strong {
+      font-weight: 600;
+      color: tokens.$text;
+      transition: text-shadow 0.15s ease-out, color 0.15s ease-out;
+    }
+
+    // glow alleen bij hover, niet bij focus
+    &:hover strong {
+      text-shadow: 0 0 8px tokens.$accent;
+    }
+  }
+
+  &__icon {
+    font-size: 1.4rem;          // pijltje groter
+    line-height: 1;
+    color: tokens.$accent;      // pijltje in accentkleur
+    transition: transform 0.2s ease, text-shadow 0.15s ease-out;
+  }
+
+  // glow op pijltje alleen bij hover
+  summary:hover &__icon {
+    text-shadow: 0 0 8px tokens.$accent;
+  }
+
+  // pijltje draaien als details open is
+  &[open] &__icon {
+    transform: rotate(180deg);
+  }
+}
+
+.feature-list {
+  margin-top: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+/* LIGHTBOX */
+
+.lightbox {
+  position: fixed;
+  inset: 0; /* top:0, right:0, bottom:0, left:0 */
+  display: none;          // standaard verborgen
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox--visible {
+  display: flex;
+}
+
+.lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox__content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.lightbox__image {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 0.5rem;
+  background: #111;
+}
+
+.lightbox__caption {
+  margin-top: 0.5rem;
+  color: #fff;
+  align-self: center;
+  font-size: 0.9rem;
+}
+
+.lightbox__close {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
 }

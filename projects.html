@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projecten — Pascal Vuong Portfolio</title>
+  <link rel="stylesheet" href="assets/css/compiled.css">
+  <script src="assets/js/lightbox.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Direct naar hoofdinhoud</a>
+
+  <!-- Brandbar (zelfde als Home) -->
+  <header class="brandbar">
+    <a class="brand" href="index.html">
+      <span class="brand__logo" aria-hidden="true"></span>
+      <span class="brand__text">
+        <strong>Pascal Vuong</strong>
+        <em>Full-Stack Developer</em>
+      </span>
+    </a>
+  </header>
+
+  <!-- Topnav (zelfde als Home) -->
+  <nav aria-label="Hoofdnavigatie" class="topnav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="autobiography.html">Biography</a></li>
+      <li><a href="projects.html" aria-current="page" class="is-current">Projects</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <main id="main" class="page" tabindex="-1">
+    <section id="projecten" aria-labelledby="projects-title">
+      <h1 id="projects-title">Projecten</h1><br>
+
+      <!-- KAART 1: Pretpark -->
+      <article class="project-card">
+        <div class="project-body">
+          <h3>
+            <a
+              href="https://gitlab.com/techniek-college-rotterdam/schiedam/2026/projects/oop-pascal-jochem/oop-pretpark"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pretpark Management Systeem
+            </a>
+          </h3>
+
+          <p>
+            Kleine OOP-applicatie voor pretparkbeheer (tickets, medewerkers, attracties, bezoekersstromen).
+            Gebouwd in PHP met OOP-principes.
+          </p>
+
+          <p class="project-info1">
+            <strong>Branches:</strong><br>
+            Medewerker<br>
+            Attractie
+          </p>
+
+          <div class="project-info2">
+            <strong>Bijdrage:</strong><br>
+            <strong>Styling:</strong> CSS met variabelen voor consistentie.<br>
+            <strong>Kwaliteit:</strong> PHPStan checks en uitgebreide PHPDoc-annotaties.<br>
+            <strong>Database setup:</strong> Tabellen/Kolommen.
+          </div><br>
+
+          <div class="project-info3">
+            <strong>Samengewerkt met:</strong><br>
+            <strong>Jochem Troost</strong><br>
+            <a class="ext-link"
+              href="https://www.linkedin.com/in/jochem-troost-ab8008318/"
+              target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            ·
+            <a class="ext-link"
+              href="https://github.com/JochemTroost"
+              target="_blank" rel="noopener noreferrer">GitHub</a>
+            ·
+            <a class="ext-link"
+              href="https://gitlab.com/JochemTroost"
+              target="_blank" rel="noopener noreferrer">GitLab</a>
+          </div><br>
+
+          <p class="project-info4">
+            <strong>Tech Stack:</strong>
+          </p>
+
+          <div class="project-info5">
+            <ul class="tech-list">
+              <li data-brand="html">
+                <img class="icon" src="assets/icons/html.svg.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+                HTML5
+              </li>
+              <li data-brand="css">
+                <img class="icon" src="assets/icons/css.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+                CSS
+              </li>
+              <li data-brand="javascript">
+                <img class="icon" src="assets/icons/javascript.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                JavaScript
+              </li>
+              <li data-brand="php">
+                <img class="icon" src="assets/icons/php.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                PHP
+              </li>              
+              <li data-brand="composer">
+                <img class="icon" src="assets/icons/composer.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Composer
+              </li>   
+              <li data-brand="smarty">
+                <img class="icon" src="assets/icons/smarty.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Smarty
+              </li>      
+              <li data-brand="sql">
+                <img class="icon" src="assets/icons/sql.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                SQL
+              </li>   
+            </ul>
+          </div>
+
+          <div class="project-info6">
+            <details class="project-features">
+              <summary>
+                <strong>Belangrijkste features</strong>
+                <span class="project-features__icon" aria-hidden="true">▾</span>
+              </summary>
+              <ul class="feature-list">
+                <li>Attractiebeheer: CRUD, status (open/dicht/storing), onderhoudslog, uptime-overzicht</li>
+                <li>Medewerkersmodule: CRUD, rollen &amp; rechten, roosters met overlap-check</li>
+                <li>Ticket- &amp; bezoekersstromen: wachttijd-ETA per attractie, capaciteit per rit</li>
+                <li>Dashboards: bezetting, storingen, onderhoud en personeel in één overzicht</li>
+                <li>Data &amp; kwaliteit: MySQL-relaties, seeding, CSV import/export, PHPStan-checks</li>
+              </ul>
+            </details>
+          </div><br>
+
+          <div class="project-media">
+            <img
+              src="assets/img/Pretpark_Dashboard.jpg"
+              data-full="assets/img/Pretpark_Dashboard.jpg"
+              alt="Dashboard van het Pretpark Management Systeem"
+              class="project-media__thumb"
+            />
+            <img
+              src="assets/img/Pretpark_Attracties.jpg"
+              data-full="assets/img/Pretpark_Attracties.jpg"
+              alt="Attractiebeheer van het Pretpark Management Systeem"
+              class="project-media__thumb"
+            />
+            <img
+              src="assets/img/Pretpark_Medewerkers.jpg"
+              data-full="assets/img/Pretpark_Medewerkers.jpg"
+              alt="Medewerkersbeheer van het Pretpark Management Systeem"
+              class="project-media__thumb"
+            />
+            <img
+              src="assets/img/Pretpark_Bezoekers_Overzicht.png"
+              data-full="assets/img/Pretpark_Bezoekers_Overzicht.png"
+              alt="Bezoekers Overzicht van het Pretpark Management Systeem"
+              class="project-media__thumb"
+            />
+            <img
+              src="assets/img/Pretpark_Rooster.png"
+              data-full="assets/img/Pretpark_Rooster.png"
+              alt="Rooster van het Pretpark Management Systeem"
+              class="project-media__thumb"
+            />
+            <img
+              src="assets/img/Pretpark_Shop_Beheer.png"
+              data-full="assets/img/Pretpark_Shop_Beheer.png"
+              alt="Shopbeheer van het Pretpark Management Systeem"
+              class="project-media__thumb"
+            />
+            <img
+              src="assets/img/Pretpark_Reservering_Statistieken.png"
+              data-full="assets/img/Pretpark_Reservering_Statistieken.png"
+              alt="Reservering statistieken van het Pretpark Management Systeem"
+              class="project-media__thumb"
+            />
+          </div>
+
+          <p class="project-cta">
+            <a
+              class="btn btn--accent"
+              href="https://gitlab.com/techniek-college-rotterdam/schiedam/2026/projects/oop-pascal-jochem/oop-pretpark"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bekijk op GitLab <span class="btn__icon" aria-hidden="true">↗</span>
+            </a>
+          </p>
+        </div>
+      </article>
+
+      <!-- KAART 2: PHP OOP RPG -->
+      <article class="project-card">
+        <div class="project-body">
+          <h3>
+            <a
+              href="https://gitlab.com/Pascal_Vuong/php-oop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PHP OOP Text-Based-RPG Game
+            </a>
+          </h3>
+
+          <p>
+            Voor dit schoolproject heb ik een text-based RPG-game gebouwd in PHP. In deze game kan de gebruiker verschillende rollen aanmaken
+            (zoals Warrior, Mage, Rogue, Healer en Tank) met eigen stats zoals health, attack, defense en range. Nieuwe characters worden
+            aangemaakt via een HTML-formulier en opgeslagen in een lijst met behulp van PHP-sessies. De spelregels en logica zitten in aparte
+            PHP-klassen (bijvoorbeeld Character, Battle en Inventory), terwijl Composer zorgt voor autoloading en een nette mappenstructuur
+            met namespaces. Voor de presentatie gebruik ik Smarty-templates en een Bootstrap-layout, zodat de HTML en CSS goed gescheiden
+            blijven van de PHP-code. Tijdens dit project heb ik geoefend met objectgeoriënteerd programmeren (OOP), type hints, docblocks,
+            werken met formulieren, sessies en het controleren van mijn code met PHPStan.
+          </p>
+
+          <p class="project-info1">
+            <strong>Tech Stack:</strong>
+          </p>
+
+          <div class="project-info2">
+            <ul class="tech-list">
+              <li data-brand="html">
+                <img class="icon" src="assets/icons/html.svg.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+                HTML5
+              </li>
+              <li data-brand="css">
+                <img class="icon" src="assets/icons/css.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+                CSS + Bootstrap 5 (Sticky Footer Navbar)
+              </li>
+              <li data-brand="javascript">
+                <img class="icon" src="assets/icons/javascript.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                JavaScript
+              </li>
+              <li data-brand="php">
+                <img class="icon" src="assets/icons/php.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                PHP
+              </li>              
+              <li data-brand="composer">
+                <img class="icon" src="assets/icons/composer.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Composer
+              </li>   
+              <li data-brand="smarty">
+                <img class="icon" src="assets/icons/smarty.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Smarty
+              </li>
+              <li data-brand="sql">
+                <img class="icon" src="assets/icons/sql.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                SQL
+              </li>                       
+            </ul>
+          </div>
+
+          <div class="project-info3">
+            <details class="project-features">
+              <summary>
+                <strong>Belangrijkste features</strong>
+                <span class="project-features__icon" aria-hidden="true">▾</span>
+              </summary>
+              <ul class="feature-list">
+                <li>Volledig objectgeoriënteerd ontwerp met classes voor Character, Inventory, Battle en een CharacterList-collectie.</li>
+                <li>Meerdere rollen met eigen stats en skills (Warrior, Mage, Rogue, Healer, enz.) via inheritance, protected properties en speciale aanvallen.</li>
+                <li>Turn-based gevechtssysteem met battleLog, ronde-limiet, schadeberekening met randomness en tijdelijke stat-buffs/debuffs.</li>
+                <li>Character-aanmaak via HTML-formulier (POST), met validatie en typecasting, gekoppeld aan OOP-constructors en setters.</li>
+                <li>Persistente lijst van characters met $_SESSION, inclusief bekijken, toevoegen, verwijderen en routering via $_GET (meerdere pagina’s).</li>
+                <li>Scheiding tussen logica en presentatie met Composer PSR-4 autoloading, Smarty-templates en een Bootstrap-layout (sticky footer navbar).</li>
+                <li>Verbeterde codekwaliteit met typehints, docblocks en PHPStan-analyse voor striktere, beter onderhoudbare code.</li>
+              </ul>
+            </details>
+          </div><br>
+
+          <div class="project-media">
+            <img src="assets/img/PHP_OOP_TestDatabase.png" data-full="assets/img/PHP_OOP_TestDatabase.png" alt="Test Database Screenshot van de PHP OOP Text-Based-RPG Game" class="project-media__thumb" />
+            <img src="assets/img/PHP_OOP_CreateCharacter.png" data-full="assets/img/PHP_OOP_CreateCharacter.png" alt="Create Character Screenshot van de PHP OOP Text-Based-RPG Game" class="project-media__thumb" />
+            <img src="assets/img/PHP_OOP_CharacterList.png" data-full="assets/img/PHP_OOP_CharacterList.png" alt="Character List van de PHP OOP Text-Based-RPG Game" class="project-media__thumb" />
+            <img src="assets/img/PHP_OOP_CharacterStatistics.png" data-full="assets/img/PHP_OOP_CharacterStatistics.png" alt="Character Statistics van de PHP OOP Text-Based-RPG Game" class="project-media__thumb" />
+            <img src="assets/img/PHP_OOP_BattleArena.png" data-full="assets/img/PHP_OOP_BattleArena.png" alt="Battle Arena van de PHP OOP Text-Based-RPG Game" class="project-media__thumb" />
+            <img src="assets/img/PHP_OOP_CreateItem.png" data-full="assets/img/PHP_OOP_CreateItem.png" alt="Create Item van de PHP OOP Text-Based-RPG Game" class="project-media__thumb" />
+            <img src="assets/img/PHP_OOP_ItemList.png" data-full="assets/img/PHP_OOP_ItemList.png" alt="Item List Screenshot van de PHP OOP Text-Based-RPG Game" class="project-media__thumb" />
+          </div>
+
+          <p class="project-cta">
+            <a
+              class="btn btn--accent"
+              href="https://gitlab.com/Pascal_Vuong/php-oop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bekijk op GitLab <span class="btn__icon" aria-hidden="true">↗</span>
+            </a>
+          </p>
+        </div>
+      </article>
+
+      <!-- KAART 3: Weer Maat -->
+      <article class="project-card">
+        <div class="project-body">
+          <h3>
+            <a href="https://gitlab.com/Pascal_Vuong/weer-maat" target="_blank" rel="noopener noreferrer">
+              Weer Maat (Weer Applicatie)
+            </a>
+          </h3>
+
+          <p>
+            Weer app met internationale plaatszoekfunctie en overzicht van huidige condities/verwachting.
+          </p>
+
+          <p class="project-info1">
+            <strong>Tech Stack:</strong>
+          </p>
+
+          <div class="project-info2">
+            <ul class="tech-list">
+              <li data-brand="react">
+                <img class="icon" src="assets/icons/react.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                React Native + Expo
+              </li>
+              <li data-brand="typescript">
+                <img class="icon" src="assets/icons/typescript.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Typescript (TSX)
+              </li>
+              <li data-brand="expo">
+                <img class="icon" src="assets/icons/expo.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Expo Router
+              </li>
+              <li data-brand="openweather">
+                <img class="icon" src="assets/icons/openweather.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Rest weer-API (Fetch)
+              </li>              
+              <li data-brand="stylesheetstyling">
+                <img class="icon" src="assets/icons/palette.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                StyleSheet-Styling
+              </li>            
+            </ul>
+          </div>
+
+          <div class="project-info3">
+            <details class="project-features">
+              <summary>
+                <strong>Belangrijkste features</strong>
+                <span class="project-features__icon" aria-hidden="true">▾</span>
+              </summary>
+              <ul class="feature-list">
+                <li>Live weer per locatie (huidige temperatuur, gevoelstemperatuur, beschrijving, icoon)</li>
+                <li>Uurlijkse én 5-daagse voorspelling in overzichtelijke kaarten</li>
+                <li>Zoeken op stad + switchen tussen opgeslagen favoriete locaties</li>
+                <li>Strakke, mobile-first UI met weer-afhankelijke achtergrondfoto’s</li>
+                <li>Gebouwd met React Native + Expo, data via externe weer-API</li>
+              </ul>
+            </details>
+          </div><br>
+
+          <div class="project-media">
+            <img src="assets/img/WeatherApp_Begin_Scherm.jpg" data-full="assets/img/WeatherApp_Begin_Scherm.jpg" alt="Weer Maat - Begin Scherm" class="project-media__thumb" />
+            <img src="assets/img/WeatherApp_Registratie.jpg" data-full="assets/img/WeatherApp_Registratie.jpg" alt="Weer Maat - Registratie" class="project-media__thumb" />
+            <img src="assets/img/WeatherApp_Home.jpg" data-full="assets/img/WeatherApp_Home.jpg" alt="Weer Maat - Home" class="project-media__thumb" />
+            <img src="assets/img/WeatherApp_Zoeken.jpg" data-full="assets/img/WeatherApp_Zoeken.jpg" alt="Weer Maat - Zoeken" class="project-media__thumb" />
+            <img src="assets/img/WeatherApp_Internationaal.jpg" data-full="assets/img/WeatherApp_Internationaal.jpg" alt="Weer Maat - Internationaal" class="project-media__thumb" />
+            <img src="assets/img/WeatherApp_Opgeslagen_Steden.jpg" data-full="assets/img/WeatherApp_Opgeslagen_Steden.jpg" alt="Weer Maat - Opgeslagen Steden" class="project-media__thumb" />
+            <img src="assets/img/WeatherApp_Profiel.jpg" data-full="assets/img/WeatherApp_Profiel.jpg" alt="Weer Maat - Profiel" class="project-media__thumb" />
+          </div><br>
+
+          <strong>Dit project is nog under development!</strong>
+
+          <p class="project-cta">
+            <a class="btn btn--accent" href="https://gitlab.com/Pascal_Vuong/weer-maat" target="_blank" rel="noopener noreferrer">
+              Bekijk op GitLab <span class="btn__icon" aria-hidden="true">↗</span>
+            </a>
+          </p>
+        </div>
+      </article>
+
+      <!-- KAART 4: OffTrack -->
+      <article class="project-card">
+        <div class="project-body">
+          <h3>
+            <a href="https://gitlab.com/Pascal_Vuong/weer-maat" target="_blank" rel="noopener noreferrer">
+              OffTrack (Reis App)
+            </a>
+          </h3>
+
+          <p>
+            OffTrack is een mobiel app-prototype met een moderne onboarding en inlog-flow.
+            De app laat zien hoe je met React Native + Expo een welcome-scherm, login-scherm en register-scherm bouwt met eigen vormgeving, achtergrondafbeeldingen en een logo, klaar om later aan een backend gekoppeld te worden.
+          </p>
+
+          <p class="project-info1">
+            <strong>Tech Stack:</strong>
+          </p>
+
+          <div class="project-info2">
+            <ul class="tech-list">
+              <li data-brand="react">
+                <img class="icon" src="assets/icons/react.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                React Native + Expo
+              </li>
+              <li data-brand="typescript">
+                <img class="icon" src="assets/icons/typescript.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Typescript (TSX)
+              </li>
+              <li data-brand="expo">
+                <img class="icon" src="assets/icons/expo.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Expo Router
+              </li>      
+            </ul>
+          </div>
+
+          <div class="project-info3">
+            <details class="project-features">
+              <summary>
+                <strong>Belangrijkste features</strong>
+                <span class="project-features__icon" aria-hidden="true">▾</span>
+              </summary>
+              <ul class="feature-list">
+                <li>Welcome screen met full-screen achtergrondafbeelding, app-logo en duidelijke call-to-action knop</li>
+                <li>Login screen met gestylede invoervelden (bijv. e-mail/wachtwoord) en knoppen om in te loggen of naar registreren te gaan</li>
+                <li>Register screen met invoervelden voor nieuwe gebruikers en een link terug naar het login-scherm</li>
+                <li>Navigatie met Expo Router tussen welcome, login en register (stack/routes structuur)</li>
+                <li>Herbruikbare UI-componenten (bijv. primaire button, invoervelden) en gedeelde styling via StyleSheet</li>
+              </ul>
+            </details>
+          </div><br>
+
+          <div class="project-media">
+            <img src="assets/img/OffTrack_BeginScherm.png" data-full="assets/img/OffTrack_BeginScherm" alt="OffTrack - Begin Scherm" class="project-media__thumb" />
+            <img src="assets/img/OffTrack_Login.png" data-full="assets/img/OffTrack_Login" alt="OffTrack Login" class="project-media__thumb" />
+            <img src="assets/img/OffTrack_Register.png" data-full="assets/img/OffTrack_Register" alt="OffTrack Register" class="project-media__thumb" />
+            <img src="assets/img/OffTrack_Profiel.png" data-full="assets/img/OffTrack_Profiel" alt="OffTrack Profiel" class="project-media__thumb" />
+            <img src="assets/img/OffTrack_Home.png" data-full="assets/img/OffTrack_Home" alt="OffTrack Home" class="project-media__thumb" />
+            <img src="assets/img/OffTrack_Toevoegen.png" data-full="assets/img/OffTrack_Toevoegen" alt="OffTrack Toevoegen" class="project-media__thumb" />
+            <img src="assets/img/OffTrack_Notificaties.png" data-full="assets/img/OffTrack_Notificaties" alt="OffTrack Notificaties" class="project-media__thumb" />
+          </div><br>
+
+          <strong>Dit project is nog under development!</strong>
+
+          <p class="project-cta">
+            <a class="btn btn--accent" href="https://gitlab.com/Pascal_Vuong/weer-maat" target="_blank" rel="noopener noreferrer">
+              Bekijk op GitLab <span class="btn__icon" aria-hidden="true">↗</span>
+            </a>
+          </p>
+        </div>
+      </article>
+
+      <!-- KAART 5: Project Soulbind RPG -->
+      <article class="project-card">
+        <div class="project-body">
+          <h3>
+            <a href="https://github.com/PascalVuong/Project-Soulbind" target="_blank" rel="noopener noreferrer">
+              Project Soulbind RPG
+            </a>
+          </h3>
+
+          <p>
+            Project Soulbind RPG is een zelfgebouwde 2D top-down RPG in Python met Pygame. De game heeft een intro-scherm met titel en lore, waarna je in een open wereld terechtkomt die is opgebouwd met Tiled-mapbestanden. De speler beweegt met 8-richtings­animaties over een tile-based wereld met collision, terwijl enemies rondlopen, de speler kunnen detecteren en achtervolgen. Sommige enemies, zoals de “Devil Kid”, kunnen de speler afpersen via een extortion-systeem waarbij keuzes invloed hebben op geld en gedrag van de vijand.
+
+            De code is modulair opgezet met aparte modules voor o.a. overworld, sprites, inventory, interface en audio. Er is een dialoogbox-systeem voor NPC’s en events, muziek en sound effects via pygame.mixer, en een state-systeem dat de overgang regelt tussen intro, overworld en (in de toekomst) turn-based combat.
+          </p>
+
+          <p class="project-info1">
+            <strong>Tech Stack:</strong>
+          </p>
+
+          <div class="project-info2">
+            <ul class="tech-list">
+              <li data-brand="python">
+                <img class="icon" src="assets/icons/python.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Python
+              </li>
+              <li data-brand="pygame">
+                <img class="icon" src="assets/icons/pygame.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Pygame
+              </li>
+              <li data-brand="tiled">
+                <img class="icon" src="assets/icons/tiled.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Tiled
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-info3">
+            <details class="project-features">
+              <summary>
+                <strong>Belangrijkste features</strong>
+                <span class="project-features__icon" aria-hidden="true">▾</span>
+              </summary>
+              <ul class="feature-list">
+                <li>Intro-scherm met titel, introductie-tekst en Play-knop.</li>
+                <li>Overworld met Tiled-map, camera en tile-collisions.</li>
+                <li>Speler met spritesheet-animaties en 8-richtingsbeweging.</li>
+                <li>Enemies die rondlopen, de speler detecteren en achtervolgen.</li>
+                <li>Extortion-systeem (Devil Kid eist geld, reageert op keuze).</li>
+                <li>Overgangen tussen maps (buiten / interieur) via Tiled-objecten.</li>
+                <li>Basis-inventory en geldsysteem, klaar voor shops en items.</li>
+                <li>Muziek en sound effects via pygame.mixer.</li>
+                <li>Dialoogbox-systeem voor NPC’s en events.</li>
+                <li>Structuur met states: intro → overworld → (later) turn-based combat.</li>
+              </ul>
+            </details>
+          </div><br>
+
+          <div class="project-media">
+            <img src="assets/img/ProjectSoulbind-Start.png" data-full="assets/img/ProjectSoulbind-Start" alt="Project Soulbind - Start" class="project-media__thumb" />
+            <img src="assets/img/ProjectSoulbind-Spawn.png" data-full="assets/img/ProjectSoulbind-Spawn" alt="Project Soulbind - Spawn" class="project-media__thumb" />
+            <img src="assets/img/ProjectSoulbind-Bag.png" data-full="assets/img/ProjectSoulbind-Bag" alt="Project Soulbind - Bag" class="project-media__thumb" />
+            <img src="assets/img/ProjectSoulbind-Status.png" data-full="assets/img/ProjectSoulbind-Status" alt="Project Soulbind - Status" class="project-media__thumb" />
+            <img src="assets/img/ProjectSoulbind-Shop.png" data-full="assets/img/ProjectSoulbind-Shop" alt="Project Soulbind - Shop" class="project-media__thumb" />
+            <img src="assets/img/ProjectSoulbind-Extortion.png" data-full="assets/img/ProjectSoulbind-Extortion" alt="Project Soulbind - Extortion" class="project-media__thumb" />
+            <img src="assets/img/ProjectSoulbind-Paid.png" data-full="assets/img/ProjectSoulbind-Paid" alt="Project Soulbind - Paid" class="project-media__thumb" />
+          </div><br>
+
+          <strong>Dit project is nog under development!</strong>
+
+          <p class="project-cta">
+            <a class="btn btn--accent" href="https://github.com/PascalVuong/Project-Soulbind" target="_blank" rel="noopener noreferrer">
+              Bekijk op GitLab <span class="btn__icon" aria-hidden="true">↗</span>
+            </a>
+          </p>
+        </div>
+      </article>
+
+      <!-- KAART 6: Turn Based Combat Battle Systeem -->
+      <article class="project-card">
+        <div class="project-body">
+          <h3>
+            <a href="https://github.com/PascalVuong/turn_based_combat_battle_system" target="_blank" rel="noopener noreferrer">
+              Turn Based Combat System
+            </a>
+          </h3>
+
+          <p>
+            Ik heb een tutorial gevolgd op YouTube om een turn-based combat game te maken met Python (Pygame). Je vecht als knight tegen bandits. Na de tutorial heb ik zelf mechanics geÏmplementeerd. Het spel heeft geanimeerde sprites, health bars, critical strikes, evasion en een bleed-status die over meerdere beurten damage doet. De vijanden gebruiken AI om te kiezen tussen aanvallen en healen met potions, en na elke gewonnen wave kun je doorgaan naar de volgende of het spel resetten, ook word er om de beurt een log bijgehouden met de gebeurtenissen bijvoorbeeld welke effecten en hoeveel damage.
+          </p>
+
+          <p class="project-info1">
+            <strong>Tech Stack:</strong>
+          </p>
+
+          <div class="project-info2">
+            <ul class="tech-list">
+              <li data-brand="python">
+                <img class="icon" src="assets/icons/python.svg" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Python
+              </li>
+              <li data-brand="pygame">
+                <img class="icon" src="assets/icons/pygame.png" alt="" width="20" height="20" loading="lazy" decoding="async">
+                Pygame
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-info3">
+            <details class="project-features">
+              <summary>
+                <strong>Belangrijkste features</strong>
+                <span class="project-features__icon" aria-hidden="true">▾</span>
+              </summary>
+              <ul class="feature-list">
+                <li>Turn-based combat systeem met een vaste beurtvolgorde (speler → meerdere vijanden).</li>
+                <li>Meerdere waves van vijanden, met oplopende moeilijkheidsgraad en een “Next Wave” knop.</li>
+                <li>OOP-structuur met klassen zoals fighter, AdvancedBandit, HealthBar, DamageText en Feedbackmessage.</li>
+                <li>Status-effecten: critical strike, evasion (aanval ontwijken) en een bleed effect dat meerdere beurten extra damage doet.</li>
+                <li>Consumables & AI: speler en bandits gebruiken potions slim (healen onder 50% HP).</li>
+                <li>Volledig geanimeerde sprites (idle, attack, hurt, death) met frame-based animaties.</li>
+                <li>Dynamische UI: health bars, HP-tekst, potion-teller, damage pop-up tekst en feedback (bijv. “Bleeding”, “CRITICAL!”, “Evaded”).</li>
+                <li>Wave victory / game over schermen met knoppen om door te gaan of het spel te resetten.</li>
+                <li>Audio-integratie met achtergrondmuziek via pygame.mixer.</li>
+              </ul>
+            </details>
+          </div><br>
+
+          <div class="project-media">
+            <img src="assets/img/TurnBasedCombat_Fight.jpg" data-full="assets/img/TurnBasedCombat_Fight.jpg" alt="Turn Based Combat - Fight" class="project-media__thumb" />
+            <img src="assets/img/TurnBasedCombat_Crit.jpg" data-full="assets/img/TurnBasedCombat_Crit.jpg" alt="Turn Based Combat - Critial Strike" class="project-media__thumb" />
+            <img src="assets/img/TurnBasedCombat_Bleed.jpg" data-full="assets/img/TurnBasedCombat_Bleed" alt="Turn Based Combat - Bleed" class="project-media__thumb" />
+          </div><br>
+
+          <strong>Dit project is nog under development!</strong>
+
+          <p class="project-cta">
+            <a class="btn btn--accent" href="https://github.com/PascalVuong/turn_based_combat_battle_system" target="_blank" rel="noopener noreferrer">
+              Bekijk op GitLab <span class="btn__icon" aria-hidden="true">↗</span>
+            </a>
+          </p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__backdrop"></div>
+
+    <figure class="lightbox__content">
+      <button class="lightbox__close" type="button" aria-label="Sluit afbeelding">
+        &times;
+      </button>
+      <img src="" alt="" class="lightbox__image" />
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+  </div>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Pascal Vuong</p>
+  </footer>
+</body>
+</html>

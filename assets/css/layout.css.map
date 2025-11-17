@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["../scss/_placeholder.scss","../scss/_tokens.scss","../scss/layout.scss"],"names":[],"mappings":"AAEA;EACE;EACA,SCDQ;EDER,eCDO;;;ACDT;EAAa;;;AAEb;EACE;EACA;EACA;EACA,KDNQ;ECOR,SDPQ;ECQR,WDXK;ECYL;;;AAKF;EAAa;EAAe,KDdlB;;;ACeV;EAAuB;;;AAEvB;EACE;IACE;IACA","file":"layout.css"}
