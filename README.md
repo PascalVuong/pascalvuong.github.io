@@ -24,6 +24,7 @@ Dit portfolio is nog in ontwikkeling. Dingen die ik later wil toevoegen/verbeter
 - **Uitbreiding layout & content**
   - Tekstblokken herschikken voor betere leesbaarheid.
   - Extra beelden/screenshots aan de contentsecties toevoegen.
+  - Inconsistenties weghalen in verband met de opmaak van pagina titels.
 
 - **Werkend contactformulier**
   - Hosting verplaatsen naar een omgeving met backend-ondersteuning.
