@@ -183,7 +183,7 @@ Hierdoor vormt het projectenblok op small screens één kolom, en vanaf tabletbr
 - Server tijdens development:
   - HTML-bestanden direct in de browser openen, of
   - Een lichte dev-server gebruiken (bijv. VS Code Live Server of `npx serve`).
-- Testbrowsers: Chrome, Edge, Firefox, Safari (laatste 2 versies).
+- Testbrowsers: Brave, Chrome, Edge, en Firefox (laatste 2 versies).
 
 ---
 
