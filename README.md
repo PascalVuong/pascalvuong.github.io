@@ -26,6 +26,7 @@ Dit portfolio is nog in ontwikkeling. Dingen die ik later wil toevoegen/verbeter
   - Extra beelden/screenshots aan de contentsecties toevoegen.
   - Inconsistenties weghalen in verband met de opmaak van pagina titels.
   - Inconsistenties weghalen in verband met de groottes van de screenshot enlargements (sommige fotos zijn groter dan anderen.)
+  - Hover-effects voor de knoppen in index.html
 
 - **Werkend contactformulier**
   - Hosting verplaatsen naar een omgeving met backend-ondersteuning.
